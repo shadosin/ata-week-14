@@ -1,0 +1,92 @@
+{
+    "ClothingStore": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "clothingType": {"S":"shoes"},
+                    "color": {"S":"black"},
+                    "cost": {"N":"75"},
+                    "currentStatus": {"S":"for sale"},
+                    "id": {"S":"SH_1248"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "clothingType": {"S":"shoes"},
+                    "color": {"S":"brown"},
+                    "cost": {"N":"70"},
+                    "currentStatus": {"S":"for sale"},
+                    "id": {"S":"SH_2345"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "clothingType": {"S":"shoes"},
+                    "color": {"S":"black"},
+                    "cost": {"N":"50"},
+                    "currentStatus": {"S":"for sale"},
+                    "id": {"S":"SH_4872"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "clothingType": {"S":"jeans"},
+                    "color": {"S":"blue"},
+                    "cost": {"N":"60"},
+                    "currentStatus": {"S":"sold"},
+                    "id": {"S":"JE_7721"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "clothingType": {"S":"jeans"},
+                    "color": {"S":"blue"},
+                    "cost": {"N":"25"},
+                    "currentStatus": {"S":"for sale"},
+                    "id": {"S":"JE_7622"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "clothingType": {"S":"t-shirt"},
+                    "color": {"S":"white"},
+                    "cost": {"N":"20"},
+                    "currentStatus": {"S":"for sale"},
+                    "id": {"S":"SH_2033"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "clothingType": {"S":"bracelet"},
+                    "color": {"S":"multicolor"},
+                    "cost": {"N":"25"},
+                    "currentStatus": {"S":"sold"},
+                    "id": {"S":"JW_9654"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "clothingType": {"S":"shoes"},
+                    "color": {"S":"multicolor"},
+                    "cost": {"N":"25"},
+                    "currentStatus": {"S":"for sale"},
+                    "id": {"S":"SH_7845"}
+                }
+            }
+        }
+    ]
+}

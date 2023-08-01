@@ -1,0 +1,64 @@
+{
+    "DynamoDBScan-Receipts": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "customerId": {"S":"jimjones"},
+                    "purchaseDate": {"S":"2022-03-16T06:50:09.89562-04:00[America/Indiana/Indianapolis]"},
+                    "salesTotal": {"N":"11"},
+                    "sundaes": {
+                        "S": "[{\"scoops\":[\"CHOCOLATE\", \"VANILLA\", \"CHOCOLATE\"],\"price\":5.5},{\"scoops\":[\"CHOCOLATE\", \"VANILLA\", \"CHOCOLATE\"],\"price\":5.5}]"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customerId": {"S":"jimjones"},
+                    "purchaseDate": {"S":"2022-03-18T06:50:09.89562-04:00[America/Indiana/Indianapolis]"},
+                    "salesTotal": {"N":"12"},
+                    "sundaes": {
+                        "S": "[{\"scoops\":[\"CHOCOLATE\", \"VANILLA\", \"CHOCOLATE\"],\"price\":5.5},{\"scoops\":[\"CHOCOLATE\", \"VANILLA\", \"CHOCOLATE\", \"STRAWBERRY\"],\"price\":6.5}]"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customerId": {"S":"johnjackson"},
+                    "purchaseDate": {"S":"2022-04-18T06:50:09.89562-04:00[America/Indiana/Indianapolis]"},
+                    "salesTotal": {"N":"10"},
+                    "sundaes": {
+                        "S": "[{\"scoops\":[\"CHOCOLATE\", \"CHOCOLATE\"],\"price\":4.5},{\"scoops\":[\"CHOCOLATE\", \"CHOCOLATE\", \"STRAWBERRY\"],\"price\":5.5}]"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customerId": {"S":"janejohannsen"},
+                    "purchaseDate": {"S":"2022-04-07T06:50:09.89562-04:00[America/Indiana/Indianapolis]"},
+                    "salesTotal": {"N":"13"},
+                    "sundaes": {
+                        "S": "[{\"scoops\":[\"CHOCOLATE\", \"VANILLA\", \"CHOCOLATE\", \"STRAWBERRY\"],\"price\":5.5},{\"scoops\":[\"CHOCOLATE\", \"VANILLA\", \"CHOCOLATE\", \"STRAWBERRY\"],\"price\":6.5}]"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customerId": {"S":"jimjoacquin"},
+                    "purchaseDate": {"S":"2022-03-28T06:50:09.89562-04:00[America/Indiana/Indianapolis]"},
+                    "salesTotal": {"N":"18.50"},
+                    "sundaes": {
+                        "S": "[{\"scoops\":[\"CHOCOLATE\", \"VANILLA\", \"CHOCOLATE\", \"STRAWBERRY\"],\"price\":5.5},{\"scoops\":[\"CHOCOLATE\", \"VANILLA\", \"CHOCOLATE\", \"STRAWBERRY\"],\"price\":5.5}, {\"scoops\":[\"STRAWBERRY\", \"STRAWBERRY\", \"STRAWBERRY\", \"STRAWBERRY\"],\"price\":6.5}]"
+                    }
+                }
+            }
+        }
+    ]
+}

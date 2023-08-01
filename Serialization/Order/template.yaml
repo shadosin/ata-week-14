@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CFT for DynamoDB table setup for Week 14 ATA User Orders Activity
+
+Resources:
+  OnlineUserOrders:
+    Type: AWS::DynamoDB::Table
+    Properties: 
+      TableName: "OnlineUserOrders"
+      AttributeDefinitions: 
+        - AttributeName: "userId"
+          AttributeType: "S"
+        - AttributeName: "orderId"
+          AttributeType: "S"
+      BillingMode: "PAY_PER_REQUEST"
+      ContributorInsightsSpecification: 
+        Enabled: true
+      KeySchema: 
+        - AttributeName: "userId"
+          KeyType: HASH
+        - AttributeName: "orderId"
+          KeyType: RANGE
+      PointInTimeRecoverySpecification: 
+        PointInTimeRecoveryEnabled: true
+      TableClass: "STANDARD"
+      Tags: 
+        - Key: Week
+          Value: 14
+        - Key: CourseName
+          Value: ata
+        - Key: InstructorMade
+          Value: true

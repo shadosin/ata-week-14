@@ -1,0 +1,11 @@
+plugins {
+    id 'com.github.spotbugs' version '4.6.2'
+    id 'ata-curriculum.snippets-conventions'
+}
+
+dependencies {
+    testImplementation files('../../gradle/lib/testinfrastructure-1.0.1.jar')
+    testImplementation(platform('org.junit:junit-bom:5.8.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+}

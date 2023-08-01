@@ -1,0 +1,70 @@
+{
+    "FoodItems": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "expirationDate": {"S":"2022-04-30"},
+                    "foodName": {"S":"avocado"},
+                    "foodSection": {"S":"produce"},
+                    "inventoryRemaining": {"N":"10"},
+                    "id": {"S":"G0216"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "expirationDate": {"S":"2023-04-30"},
+                    "foodName": {"S":"Cheerios"},
+                    "foodSection": {"S":"cereal"},
+                    "inventoryRemaining": {"N":"4"},
+                    "id": {"S":"A014"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "expirationDate": {"S":"2024-04-30"},
+                    "foodName": {"S":"peanut butter"},
+                    "foodSection": {"S":"bread"},
+                    "inventoryRemaining": {"N":"12"},
+                    "id": {"S":"S426"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "expirationDate": {"S":"2022-04-15"},
+                    "foodName": {"S":"chicken breast"},
+                    "foodSection": {"S":"meat"},
+                    "inventoryRemaining": {"N":"6"},
+                    "id": {"S":"S623"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "expirationDate": {"S":"2022-06-15"},
+                    "foodName": {"S":"organic milk"},
+                    "foodSection": {"S":"dairy"},
+                    "inventoryRemaining": {"N":"8"},
+                    "id": {"S":"G129"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "expirationDate": {"S":"2022-06-22"},
+                    "foodName": {"S":"bananas"},
+                    "foodSection": {"S":"produce"},
+                    "inventoryRemaining": {"N":"28"},
+                    "id": {"S":"C912"}
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "OnlineUserOrders": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "userId": {"S":"jimjones"},
+                    "orderId": {"S":"abcd1234"},
+                    "totalCost": {"N":"75"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "userId": {"S":"johnjackson"},
+                    "orderId": {"S":"abcd5678"},
+                    "totalCost": {"N":"100"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "userId": {"S":"johnjackson"},
+                    "orderId": {"S":"efgh5678"},
+                    "totalCost": {"N":"90"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "userId": {"S":"janejohannsen"},
+                    "orderId": {"S":"abcd9999"},
+                    "totalCost": {"N":"80"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "userId": {"S":"jimjoacquin"},
+                    "orderId": {"S":"efgh4321"},
+                    "totalCost": {"N":"110"}
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CFT for DynamoDB table setup for Week 14 ATA ClothingStore Activity
+
+Resources:
+  ClothingStore:
+    Type: AWS::DynamoDB::Table
+    Properties: 
+      TableName: "ClothingStore"
+      AttributeDefinitions: 
+        - AttributeName: "id"
+          AttributeType: "S"
+      BillingMode: "PAY_PER_REQUEST"
+      ContributorInsightsSpecification: 
+        Enabled: true
+      KeySchema: 
+        - AttributeName: "id"
+          KeyType: HASH
+      PointInTimeRecoverySpecification: 
+        PointInTimeRecoveryEnabled: true
+      TableClass: "STANDARD"
+      Tags: 
+        - Key: Week
+          Value: 14
+        - Key: CourseName
+          Value: ata
+        - Key: InstructorMade
+          Value: true
