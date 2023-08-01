@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Run ClothingStore test",
+      "setup": "",
+      "run": "./gradlew dynamodbscan-clothingstore-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 11,
+      "points": 1
+    },
+    {
+      "name": "Run Grocery Test",
+      "setup": "",
+      "run": "./gradlew dynamodbscan-grocery-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Serialization Order Test",
+      "setup": "",
+      "run": "./gradlew serialization-order-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Playlist Test",
+      "setup": "",
+      "run": "./gradlew stacksandqueues-playlist-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Sentence Builder Test",
+      "setup": "",
+      "run": "./gradlew stacksandqueues-sentencebuilder-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Palindrome Checker Test",
+      "setup": "",
+      "run": "./gradlew stacksandqueues-palindromechecker-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Balanced Curly Bracket Validator Test",
+      "setup": "",
+      "run": "./gradlew balanced-curlybracevalidator-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Kenzie Java File Compiler Test",
+      "setup": "",
+      "run": "./gradlew kenzie-javafile-compiler-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Balanced Curly Bracket Validator Extension Test",
+      "setup": "",
+      "run": "./gradlew balanced-curlybracevalidator-extension-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Verify Ice Cream Tests",
+      "setup": "",
+      "run": "./gradlew verifytests-icecream",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
