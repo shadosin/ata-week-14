@@ -1,6 +1,8 @@
 package com.kenzie.groupwork.kenziejavacompiler;
 
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -22,7 +24,18 @@ public class BalancedCurlyBraceValidator {
      */
     public boolean check(List<Character> fileCharacters) {
         // TODO: complete this method
-        return false;
+       Stack<Character> stack = new Stack<>();
+       for (char c: fileCharacters){
+           if(c == OPEN){
+            stack.push(c);
+           } else if (c == CLOSE) {
+            if(stack.isEmpty()){
+                return false;
+            }
+            stack.pop();
+           }
+       }
+       return stack.isEmpty();
     }
 
     /**
@@ -33,7 +46,23 @@ public class BalancedCurlyBraceValidator {
      */
     public boolean checkExtension(List<Character> fileCharacters) {
         // TODO: complete this method
-        return false;
+        Stack<Character> stack = new Stack<>();
+        for(int i = 0; i < fileCharacters.size(); i++){
+            char c = fileCharacters.get(i);
+            if (c == OPEN){
+                stack.push(c);
+            } else if (c == CLOSE) {
+                if(stack.isEmpty()){
+                    System.out.println("Unbalanced closing brace at index " + i);
+                    return false;
+                }
+                stack.pop();
+            }
+        }
+        if(!stack.isEmpty()){
+            System.out.println("Unbalanced opening brace at index " + fileCharacters.indexOf(stack.peek()));
+        }
+        return stack.isEmpty();
     }
 
     /**

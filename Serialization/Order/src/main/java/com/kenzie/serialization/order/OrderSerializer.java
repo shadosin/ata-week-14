@@ -1,5 +1,6 @@
 package com.kenzie.serialization.order;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
@@ -16,7 +17,11 @@ public class OrderSerializer {
      */
     public static Order toOrder(String json) {
         // TODO: implement
-        return new Order();
+        try {
+            return MAPPER.readValue(json, Order.class);
+        } catch (JsonProcessingException e) {
+            throw new OrderSerializationException("Improper Serialization", e);
+        }
     }
 
     /**
@@ -25,8 +30,12 @@ public class OrderSerializer {
      * @return the order in JSON format
      * @throws OrderSerializationException if the order cannot be written to JSON
      */
-    public static String toJSON(Order order) {
+    public static String toJSON(Order order){
         // TODO: implement
-        return "";
+        try {
+            return MAPPER.writeValueAsString(order);
+        } catch (JsonProcessingException e) {
+            throw new OrderSerializationException("Improper Serialization", e);
+        }
     }
 }

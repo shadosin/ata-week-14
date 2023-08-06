@@ -1,6 +1,9 @@
 package com.kenzie.stacks.sentencebuilder;
 
+import java.util.Stack;
+
 public class SentenceBuilder {
+    Stack<String> sentence = new Stack<>();
 
     /**
      * Constructor.
@@ -14,7 +17,7 @@ public class SentenceBuilder {
      * @param word to be added to the sentence.
      */
     public void addWord(String word) {
-
+        sentence.push(word);
     }
 
     /**
@@ -22,7 +25,9 @@ public class SentenceBuilder {
      * @return The word most recently added to the sentence, if any; null, otherwise.
      */
     public String undo() {
-        return "";
+        if(!sentence.isEmpty()){
+        return sentence.pop();}
+      return null;
     }
 
     /**
@@ -30,6 +35,6 @@ public class SentenceBuilder {
      * @return string representation of the words currently in the sentence.
      */
     public String getSentenceWords() {
-        return "[]";
+        return sentence.toString();
     }
 }

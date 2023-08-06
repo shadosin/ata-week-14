@@ -30,7 +30,7 @@ public class KenzieJavaFileCompiler {
      */
     public boolean compile() {
         // TODO: uncomment to run extension code
-        // balancedCurlyBraceValidator.setDebug(true);
+        balancedCurlyBraceValidator.setDebug(true);
         return balancedCurlyBraceValidator.check(fileChars);
     }
 

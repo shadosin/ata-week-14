@@ -54,7 +54,8 @@ public class Receipt {
         this.salesTotal = salesTotal;
     }
 
-    @DynamoDBIgnore
+    @DynamoDBAttribute(attributeName = "sundaes")
+    @DynamoDBTypeConverted(converter = SundaeConverter.class)
     public List<Sundae> getSundaes() {
         return sundaes;
     }

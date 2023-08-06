@@ -33,6 +33,13 @@ public class ClothingDao {
      */
     public List<Clothing> scanByClothingType(final String clothingType) {
         //TODO: replace the below code
-        return Collections.emptyList();
+        Map<String, AttributeValue> valueMap = new HashMap<>();
+        valueMap.put(":clothingTypeToScan", new AttributeValue().withS(clothingType));
+
+        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression()
+                .withFilterExpression("clothingType = :clothingTypeToScan")
+                .withExpressionAttributeValues(valueMap);
+
+        return mapper.scan(Clothing.class, scanExpression);
     }
 }

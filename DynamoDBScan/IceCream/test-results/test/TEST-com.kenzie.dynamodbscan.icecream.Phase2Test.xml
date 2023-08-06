@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kenzie.dynamodbscan.icecream.Phase2Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-08-01T17:13:55" hostname="BANANACOMP" time="1.195">
+  <properties/>
+  <testcase name="getReceipts_firstPage_returnsListSizeEqualToLimit()" classname="com.kenzie.dynamodbscan.icecream.Phase2Test" time="0.403"/>
+  <testcase name="getReceipts_allResults_resultsContainNewlyCreatedReceipts()" classname="com.kenzie.dynamodbscan.icecream.Phase2Test" time="0.792"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
